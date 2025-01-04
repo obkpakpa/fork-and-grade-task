@@ -1,0 +1,18 @@
+1. A commit in git is snapshot of a project you are working on at a specific point in time.
+
+2. A branch is a separate version of the main repository in Git. It helps to diverge from the main branch and continue to work without affecting it.
+
+3. A pull request in GitHub allows developers to notify team members about changes they've pushed to a branch in a repository.
+
+4. To initialize a new Git repository, the git init or git clone is used.
+
+5. -Open the repository on GitHub.
+   -Click on the green Code button and copy the URL of the               repository.
+   -Open Command Prompt on the local machine and navigate to where you want the cloned repository to be stored.
+   -Use the git clone command followed by the repository URL copied earlier.
+   -Press Enter to create a local copy of the repository in the specified location.
+   -Navigate to the location where the repository was cloned to verify that it was successful.
+
+6. 
+
+7. Changes are pushed to a remote repository by using the git push command.
