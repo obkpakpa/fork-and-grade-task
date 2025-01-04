@@ -1,0 +1,23 @@
+name: Auto Grading
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  grade:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Validate Solution
+      run: |
+        if [ ! -f "solution.txt" ]; then
+          echo "❌ Missing solution file!" && exit 1
+        fi
+        if ! grep -q "Answer" solution.txt; then
+          echo "❌ No answer found in solution file!" && exit 1
+        fi
+        echo "✅ Solution file looks good!"
